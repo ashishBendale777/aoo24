@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        header {
+            background-color: purple;
+            height: 60px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        section {
+            height: 100vh;
+            width: 100%;
+            padding-top: 40px;
+        }
+
+        .navbar {
+            background-color: red;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            font-size: 25px;
+        }
+
+        /* a {} */
+
+        .nav-links a {
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            background-color: purple;
+            font-style: italic;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>HOME</h1>
+    </section>
+
+    <section id="about">
+        <h1>ABOUT</h1>
+    </section>
+
+    <section id="contact">
+        <h1>CONTACT</h1>
+    </section>
+
+    <section id="services">
+        <h1>SERVICES</h1>
+    </section>
+
+</body>
+
+</html>

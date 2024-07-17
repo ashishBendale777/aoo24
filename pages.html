@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            background-color: greenyellow;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-card {
+            height: 300px;
+            width: 200px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .social-card button {
+            background-color: red;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .social-card button:hover {
+            background-color: purple;
+            font-style: italic;
+        }
+
+        .social-card:hover {
+            background-color: aquamarine;
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        img {
+            height: 50px;
+            width: 50;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> RESPONSIVE CARDS CSS</h1>
+    <section class="card-container">
+        <div class="social-card">
+            <img src="images/TWITTER.png" />
+            <H2> TWITTER </H2>
+            <P></P>Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit.</P>
+            <button> READ MORE</button>
+
+        </div>
+        <div class="social-card">
+            <img src="images/INSTA.png" />
+            <h2> INSTAGRAM </h2>
+            <p></p>Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. </p>
+            <button> READ MORE</button>
+
+        </div>
+        <div class="social-card">
+            <img src="images/yt.svg" />
+            <H2> YOUTUBE </H2>
+            <p>Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.</p>
+
+            <button>READ MORE</button>
+        </div>
+    </section>
+
+</body>
+
+</html>
