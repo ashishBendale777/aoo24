@@ -3,6 +3,10 @@
 
 <head>
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
+
     <style>
         header {
             background-color: purple;
@@ -44,6 +48,190 @@
             font-style: italic;
             border-radius: 5px;
         }
+
+        /* services cards */
+
+        .inf-card {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .card-body {
+            height: 300px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 10;
+            background-color: chartreuse;
+
+
+        }
+
+        .card-header {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .img-idcard {
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50px;
+            border: 10px;
+
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        .A-card {
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            padding: 20px;
+            background-color: blue;
+        }
+
+        .A-card button:hover {
+            background-color: darkblue;
+            font-style: inherit;
+            border-radius: 30px;
+        }
+
+
+        /* contact section */
+        .contact-container {
+            width: 100vw;
+            height: 100%;
+            display: flex;
+        }
+
+        .form-container {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 50%;
+        }
+
+        .form-container input {
+            height: 40px;
+            border: 2px solid red;
+            border-radius: 30px;
+            padding-left: 20px;
+            color: aqua;
+        }
+
+        .form-container button {
+            height: 30px;
+            border-radius: 40px;
+            border: 20px;
+            background-color: blue;
+            color: black;
+
+        }
+
+        .form-container button:hover {
+            background-color: brown;
+
+        }
+
+        .image-container {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            height: 450px;
+            width: 450px;
+            border-radius: 50%;
+        }
+
+        footer {
+            height: 50vh; */
+            width: 100%; */
+            /* background-color: red; */ */
+        }
+
+        .footer-container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            gap: 20px; 
+            /* background-color: blue; */
+
+        }
+
+        .footer-container {
+            height: 80%;
+            align-self: center;
+            display: flex;
+            
+            /* background-color: green; */
+            flex-grow: 1;
+        }
+
+        .footer-social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            gap: 18px;
+            font-size: 26px;
+        }
+
+
+        .footer-information p {
+            font-weight: bold;
+        }
+        .footer-information address {
+            height: 80px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+        }
+
+        .footer-ID {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .footer-ID ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            gap: 3px;
+        }
+
+        .footer-ID p {
+            font-weight: bold;
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -69,12 +257,89 @@
 
     <section id="contact">
         <h1>CONTACT</h1>
+        <div class="contact-container">
+
+            <div class="image-container">
+                <img src="./images/BOY1.jpg" alt="">
+
+            </div>
+            <div class="form-container">
+                <form>
+                    <input type="text" placeholder="Enter Name" />
+                    <input type="email" placeholder="Enter Email" />
+                    <input type="number" placeholder="Enter Mobile" />
+                    <input type="password" placeholder="Enter Password" />
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <section id="services">
         <h1>SERVICES</h1>
+        <div>
+            <div class="inf-card">
+                <div class="A-card">
+                    <div class="card-header">
+                        <img class="img-idcard" src="images/BOY.jpg" />
+                    </div>
+                    <div class="card-body">
+                        <h2> David Dell</h2>
+                        <p> The icrem text the section contain contains header having open and close functionality.</p>
+                        <button> View More</button>
+                    </div>
+                </div>
+                <div class="A-card">
+                    <div class="card-hearder">
+                        <img class="img-idcard" src="images/GIRL.jpg" />
+                    </div>
+                    <div class="card-body">
+                        <h2> Rose Bush</h2>
+                        <p> The icrem text the section contain contains header having open and close functionality.</p>
+                        <button> View More</button>
+                    </div>
+                </div>
+                <div class="A-card">
+                    <div class="card-hearder">
+                        <img class="img-idcard" src="images/BOY1.jpg" />
+                    </div>
+                    <div class="card-body">
+                        <h2> Jones Gail</h2>
+                        <p> The icrem text the section contain contains header having open and close functionality.</p>
+                        <button> View More</button>
+                    </div>
+                </div>
     </section>
 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-information">
+                <h1> Head Office</h1>
+                <address> 24/4,Prabhat Colony, Near Prabhat Chauk,Jalgaon(MH),Pin Code 425001,</address>
+                <p> Copyright @ 2021 technoweit </p>
+                <p> Design By:technoweit team</p>
+            </div>
+            <div class="footer-ID">
+                <h1> Contact Info</h1>
+                <ul>
+                    <li>+91 8888813277, </li>
+                    <li>+91 7620979777</li>
+
+                </ul>
+                <p>info@technoweit.com</p>
+            </div>
+            <div class="footer-icon">
+                <h1> Follow Us</h1>
+                 <div class="footer-social">
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                 </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
