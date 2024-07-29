@@ -5,7 +5,7 @@
     <title>Document</title>
 
     <style>
-        * {
+        * { */
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -23,6 +23,7 @@
         .container-item {
             height: 300px;
             flex-grow: 1;
+            /* width: 100px; */
             background-color: green;
         }
 
@@ -32,9 +33,9 @@
             justify-content: center;
             background-color: black;
             padding: 10px;
-            transition: opacity 1s;
-            /* transition: all 1s; */
-            opacity: 0;
+            transition: opacity 0.5s;
+            opacity: 0.6;
+            
         }
 
         .container-item:hover .overlay {
@@ -54,7 +55,6 @@
             <div class="overlay">
                 <h1>Hello</h1>
             </div>
-
         </div>
         <div class="container-item">
             <div class="overlay">
